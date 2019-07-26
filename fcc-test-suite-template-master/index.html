@@ -27,19 +27,47 @@
    </div>
    <div class="main-section">
     <header id="about-us">About Us</header>
-    <p>I'm Maryfel</p>
-    <p>I'm Maria</p>
-    <code>x+y=z</code><br><br>
-    <li>Second item</li><br>
+    <p>All payment methods
+      in one place.</p>
+    <p>Transform your business by implementing different means 
+      of payment in your e-Commerce in a safe, simple way and 
+      consolidating your sales.</p>
+      <p>Offer different means of payment to your customers:</p>
+      <li>Credit and debit cards</li>
+      <p>Charge through your website or mobile application with our advanced 
+        e-Commerce solutions. Accept credit and debit cards securely.</p>
+      <li>Payments in cash</li>
+      <p>Sell ​​online and cash in Mexico's largest payment network with 30,000 
+        payment points Easy and quick implementation</p>
+        <code>x+y=z</code><br><br>
    </div>
    <div class="main-section">
     <header id="something-interesting">Something interesting</header>
-    <p>Maryfel is from Barranquilla, Colombia.</p>
-    <p>Maria is from Puebla, Mexico.</p>
-    <code>x+y=z</code><br><br>
-    <li>Third item</li>
-    <li>Fourth item</li>
-    <li>Fifth item</li><br><br>
+    <p>3D Secure</p>
+    <p>Below is the flow of how a charge is made using the 3d Secure process:
+        Below are the fields of the POST form, which must comply with current web standards 
+        like url-encoding, headers with user-agent, content-lenght, etc. to ensure maximum 
+        compatibility with current browsers.</p>
+
+    <li>Create secure 3D transactions. - 
+      You must create in Openpay a transaction indicating that you want to use 3D Secure. 
+      See: Charge with token.</li>
+    <li>Authentication url sent. - 
+      The response from step 1 will be the URL to which the client should be re-directed 
+      to perform the 3D Secure process.</li>
+    <li>Re-direction to Authentication URL. - 
+      Once the trade has the authentication URL, you must redirect the client to the same.</li><br><br>
+    <code>{
+        "method": "card",
+        "amount": 6000.00,
+        "description": "3D Secure Secure",
+        "order_id": "000000004",
+        "source_id": "token1",
+        "redirect_url":"http://www.openpay.mx/index.html",
+        "use_3d_secure": "true"
+      }
+    </code><br><br>
+    <br><br>
    </div>
    <div class="main-section">
     <header id="another-stuff">Another Stuff</header>
